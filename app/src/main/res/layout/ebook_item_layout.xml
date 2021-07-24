@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#ECE8E8"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_picture_as_pdf_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Html book"
+            android:id="@+id/ebooktitle"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:fontFamily="@string/regular"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ebookdow"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_cloud_download_24"
+            android:layout_marginLeft="-30dp"/>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/ycc"
+            android:scaleType="fitXY"
+            android:id="@+id/clgimg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_collage"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@string/light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_label_important_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:textSize="@dimen/text_size0"
+                android:fontFamily="@string/regular"
+                android:text="Green Evoirement"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@string/bold"
+            android:text="Cources"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/text_margin"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:id="@+id/viewPager"
+            android:overScrollMode="never"
+            android:layout_height="250dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@string/bold"
+                android:text="Contact details"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:text=" Yashwantrao Chavan College of Science, Karad"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:text="Karad-Masur Road, Vidyanagar, KARAD – 415124
+District : Satara
+Maharashtra
+Email : prinyccsk@gmail.com
+Tel No. 02164 271356 / 271357"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/map"
+                android:src="@drawable/map"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

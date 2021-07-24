@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#0C1227"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingTop="75dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yc collage karad"
+                        android:fontFamily="@font/bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="45sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="275dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@string/regular"
+                        android:gravity="center"
+                        android:text="Welcome to Yashwantrao Chavan collage of Science"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp" />
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="4dp"
+                        android:background="@color/grey"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-20dp"/>
+
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/darkcolor"
+                    app:cardElevation="4dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="-65dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/bold"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+
+                            android:layout_height="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@string/regular"
+                                android:id="@+id/logEmail"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            app:passwordToggleEnabled="true"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@string/regular"
+                                android:id="@+id/logPass"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/white"
+                                android:text="Not yet registered?"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:text="Registre here"
+                                android:layout_marginLeft="8dp"
+                                android:id="@+id/opereg"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Forget password?"
+                            android:id="@+id/openforg"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:id="@+id/loginbtn"
+                    android:layout_marginHorizontal="16dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

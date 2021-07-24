@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="129dp"
+            android:id="@+id/img"
+            android:layout_height="129dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/text_margin"
+            android:src="@drawable/my2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/title_size"
+            android:text="Designed and Developed by Aditya deshmukh"
+            android:layout_margin="@dimen/text_margin"
+            android:fontFamily="@string/bold"
+            android:gravity="center_horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="4dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/title_size"
+            android:text="Contact "
+            android:layout_margin="@dimen/text_margin"
+            android:fontFamily="@string/bold"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_email_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:linksClickable="true"
+                android:autoLink="email"
+                android:textSize="@dimen/text_size0"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:fontFamily="@string/regular"
+                android:text="Adityadeshmukh8605@gmail.com"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size0"
+                android:linksClickable="true"
+                android:autoLink="phone"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:fontFamily="@string/regular"
+                android:text="8605928558"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="4dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/title_size"
+            android:text="Follow on "
+            android:layout_margin="@dimen/text_margin"
+            android:fontFamily="@string/bold"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

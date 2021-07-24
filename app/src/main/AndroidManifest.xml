@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yccollage">
+    <permission android:name="aditya_app"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YcCollage">
+        <activity android:name=".auth.ForgetActivity" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+        </activity>
+        <activity
+            android:name=".auth.Register_activity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".dev_layout"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".fullImageview" />
+        <activity android:name=".web"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".ebook.PdfViewer" />
+        <activity
+            android:name=".ebook.EbookActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

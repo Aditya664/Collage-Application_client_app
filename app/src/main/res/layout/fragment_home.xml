@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:sliderAnimationDuration="750"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#151414"
+                app:sliderIndicatorUnselectedColor="#c1c1c1"
+                app:sliderStartAutoCycle="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/bold"
+                android:text="Welcome to Yccs karad"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:text="@string/about_collage"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@color/darkcolor"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="36dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:fontFamily="@string/bold"
+                        android:text="Departments"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/title_size" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Computer Science"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Chemistry"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Electronics"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Physics"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Botany"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Mathematics"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Statistics"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Chemistry"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="geology"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Zoology"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Microbiology"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="Bio-tech"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_marginHorizontal="@dimen/text_margin"
+                                android:layout_marginTop="@dimen/text_margin"
+                                android:fontFamily="@string/light"
+                                android:text="English"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/text_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@string/bold"
+                    android:text="Contact details"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/text_margin"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:fontFamily="@string/light"
+                    android:text=" Yashwantrao Chavan College of Science, Karad"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/text_margin"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:fontFamily="@string/light"
+                    android:text="Karad-Masur Road, Vidyanagar, KARAD – 415124
+District : Satara
+Maharashtra
+Email : prinyccsk@gmail.com
+Tel No. 02164 271356 / 271357"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/map"
+                    android:src="@drawable/map"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

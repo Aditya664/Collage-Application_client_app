@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Yc collage</string>
+    <string name="bold" tools:ignore="ReferenceType">@font/bold</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/regu</string>
+    <string name="light" tools:ignore="ReferenceType">@font/light</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+
+    <string-array name="theme">
+
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+
+    <string name="about_collage">Shri Shivaji Education Society, Karad, founded by Late Hon. Shri Yashwantrao Chavan, former Deputy Prime Minister of India, esablished this college in June 1958 as Science College Karad with an objective of providing education in science to students of the Karad area in Maharashtra. To keep his memory alive, the college was renamed after him in 1986. The college building inaugurated in 1960 by the then President of India, Dr. Rajendra Prasad is located in a sprawling campus of around 40 acres and has flourished under the able stewardship of Late Hon. Shri P. D. Patil. Today Yashwantrao Chavan College of Science, Karad is one of the premier educational institution in this region.</string>
+</resources>
